@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>My Game Page - Ping Pong</title>        
+    <link rel="stylesheet" type="text/css" href="css/games.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Pong Game</title>
+
+    <style>
+        #pong{
+            border: 2px solid #FFF;
+            position: absolute;
+            margin :auto;
+            top:0;
+            right:0;
+            left:0;
+            bottom:0;
+        }
+        
+        h1{
+            color:black;
+            font-size:2em;
+            font-weight:100;
+        }
+    </style>
+
+</head>
+
+<body onload="startGame()">
+    <div class="container">
+        <div class="child">
+            <table class="title">
+                <tr>
+                    <td><a href="games.html">My Game Page</a> <img src="media/arrow.png" width="50px"> Ping Pong</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <br>
+    <div class="child">        
+        
+            <h1>Player VS Computer, who can get more points?</h1>
+            <canvas id="pong" width="600" height="400"></canvas>
+            <script src="js/game3.js"></script>
+            <div style="width:600px; height:500px;"></div>
+    </div>
+</body>
+
+</html>

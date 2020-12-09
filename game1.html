@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>My Game Page - Jaguar Puzzle</title>        
+        <link rel="stylesheet" type="text/css" href="css/games.css">
+        <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Moak">
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <script src="https://code.jquery.com/jquery-latest.js"></script>
+          <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+          <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+          <style> 
+          body{
+               font-family:'arial black';
+            }
+            #MoveMe1, #MoveMe2, #MoveMe3, #MoveMe4, #MoveMe5, #MoveMe6
+            {
+               border: solid 0px;
+            }
+            section{
+                display:flex;
+                flex-wrap:wrap;
+              }
+             p{
+                 flex:3;
+             }
+             h1{
+                color:black;
+                font-size:2em;
+                font-weight:100;
+            }
+          </style>
+          <script>
+               $(function()
+              {
+                  $("#MoveMe1").draggable();
+                  $("#MoveMe2").draggable();
+                  $("#MoveMe3").draggable();
+                  $("#MoveMe4").draggable();
+                  $("#MoveMe5").draggable();
+                  $("#MoveMe6").draggable();
+              });
+          </script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="child">
+                <table class="title">
+                    <tr>
+                        <td><a href="games.html">My Game Page</a> <img src="media/arrow.png" width="50px"> Jaguar Puzzle</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <div class="child">
+                <table class="puzzle">
+                    <section style="padding-left: 0;
+                    padding-right: 0;
+                    margin-left: auto;
+                    margin-right: auto;
+                    display: block;
+                    width: 800px;">
+                        <h1>Click and drag all the pieces into their correct place.</h1>
+                    </section>
+                    <section>
+                        <p id="MoveMe1"><img src="media/Jag4.png"></p>
+                        <p id="MoveMe2"><img src="media/Jag5.png"></p>
+                        <p id="MoveMe3"><img src="media/Jag2.png"></p>
+                        <p id="MoveMe4"><img src="media/Jag1.png"></p>
+                        <p id="MoveMe5"><img src="media/Jag6.png"></p>
+                        <p id="MoveMe6"><img src="media/Jag3.png"></p>
+                     </section>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>
